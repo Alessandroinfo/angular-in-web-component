@@ -1,12 +1,12 @@
-Guide to Including an Angular App with Routing in a Web Component
-=================================================================
+## Guide to Including an Angular App with Routing in a Web Component
 
-👋 Welcome to our guide on how to include an entire Angular app with routing inside a web component!
+
+👋 Welcome the guide on how to include an entire Angular app with routing inside a web component!
 
 Introduction
 ------------
 
-We will be using `@angular/elements` to create a web component in Angular, and the entire app will be included inside it.
+Will be used `@angular/elements` to create a web component in Angular, and the entire app will be included inside it.
 
 Getting Started
 ---------------
@@ -14,7 +14,7 @@ Getting Started
 1.  Clone the repository
 2.  Install dependencies using `npm install`
 3.  Build using `ng build`
-4.  Package to compile the JS into `angular-in-web-component.js` using `npm run package`
+4.  Package to compile the `dist/*.*.js` angular build into `angular-in-web-component.js` using `npm run package`
 5.  Serve using `npm run serve`
 
 Here are the relevant commands:
@@ -26,11 +26,9 @@ Here are the relevant commands:
 "serve": "npx -p http-server http-server ./test-angular-web-component/ -o --cors --port 8080 -P http://localhost:8080?",
 ```
 
-The `package` command will copy the generated style file `styles.css` into the `test-angular-web-component` directory.
+The `package` command will copy also the generated style file `styles.css` into the `test-angular-web-component` directory.
 
 Here is the file tree:
-
-Copy code
 
 ```
 ├── angular-in-web-component.js
@@ -44,8 +42,6 @@ Guide
 ### Installation
 
 Install `@angular/elements` with the following command:
-
-cssCopy code
 
 `npm i @angular/elements -D`
 
