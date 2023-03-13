@@ -1,4 +1,4 @@
-## Guide to Including an Angular App with Routing in a Web Component
+## Guide to wrap an Angular App with Routing in a Web Component
 
 
 👋 Welcome the guide on how to include an entire Angular app with routing inside a web component!
