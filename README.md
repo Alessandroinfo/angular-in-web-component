@@ -53,7 +53,7 @@ cssCopy code
 
 In `app.module.ts`, use `@angular/elements` to include the `AppComponent` component and define it with `customElements.define`.
 
-Remember to set the same selector in `AppComponent` as the one used in `customElements.define`.
+**Remember** to set the same selector in `AppComponent` as the one used in `customElements.define`.
 
 Here is the file tree of the app:
 
