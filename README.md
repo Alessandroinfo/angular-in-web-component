@@ -1,10 +1,4 @@
-The two different methods showcased in the repository demonstrate two different approaches for creating web components in Angular using `@angular/elements`.
-
-The first method, which is referred to as the "old way", involves creating a module for the web component and then registering it with `customElements.define()` in the `ngDoBootstrap()` method of the `AppModule`.
-
-The second method, which is referred to as the "new way", involves creating a standalone component and then registering it with `customElements.define()` outside of Angular's bootstrapping process.
-
-Both methods ultimately result in the creation of a custom web component, but the second method allows for more flexibility in terms of when and how the component is loaded, and also allows for the component to be used outside of an Angular context.Guide to Including an Angular App with Routing in a Web Component
+Guide to Including an Angular App with Routing in a Web Component
 =================================================================
 
 👋 Welcome to our guide on how to include an entire Angular app with routing inside a web component!
@@ -25,12 +19,12 @@ Getting Started
 
 Here are the relevant commands:
 
-jsonCopy code
-
-`"start": "ng serve",
+```json
+"start": "ng serve",
 "build": "ng build",
 "package": "cat ./dist/angular-in-web-component/{polyfills,runtime,main}.*.js > ./test-angular-web-component/angular-in-web-component.js && cp ./dist/angular-in-web-component/styles.*.css ./test-angular-web-component/styles.css",
-"serve": "npx -p http-server http-server ./test-angular-web-component/ -o --cors --port 8080 -P http://localhost:8080?",`
+"serve": "npx -p http-server http-server ./test-angular-web-component/ -o --cors --port 8080 -P http://localhost:8080?",
+```
 
 The `package` command will copy the generated style file `styles.css` into the `test-angular-web-component` directory.
 
@@ -38,9 +32,11 @@ Here is the file tree:
 
 Copy code
 
-`├── angular-in-web-component.js
+```
+├── angular-in-web-component.js
 ├── index.html
-└── styles.css`
+└── styles.css
+```
 
 Guide
 -----
@@ -61,9 +57,9 @@ Remember to set the same selector in `AppComponent` as the one used in `customEl
 
 Here is the file tree of the app:
 
-javaCopy code
 
-`.
+```
+.
 ├── app
 │   ├── app-routing.module.ts
 │   ├── app.component.html
@@ -81,7 +77,8 @@ javaCopy code
 ├── favicon.ico
 ├── index.html
 ├── main.ts
-└── styles.scss`
+└── styles.scss
+```
 
 ### Routing
 
